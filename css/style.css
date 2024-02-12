@@ -1,7 +1,112 @@
-.grid-container{
-    display: grid;
-}
+@media only screen and (max-width: 768px){
+:root {
+    --color-base: #eed3c7;
+    --color-slate: #232323;
+    --color-light: #dddbd7;
+    --size-300: 0.8rem;
+    --size-400: 1rem;
+    --size-500: 1.25rem;
+    --size-600: 1.56rem;
+    --size-700: 1.95rem;
+    --size-800: 2.44rem;
+    --size-900: 3.05rem;
+    --size-max: 4rem;
+    --size-contain: 60rem;
+    --font-base: Georgia, serif;
+    --font-lobster: "Lobster", cursive;
+  }
+
+  body {
+    font-family: var(--font-base);
+    background: var(--color-base);
+    color: var(--color-slate);
+    line-height: 1.5;
+    padding: var(--size-700) var(--size-500);
+  }  
+
+  h1 {
+    font-family: var(--font-lobster);
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-family: var(--font-lobster);
+    font-size: var(--size-900);
+  }
+  
+  h2:first-child {
+    padding-top: var(--size-900);
+  }
+  
+  h1 + h2 {
+    --flow-space: var(--size-300);
+  
+    font-weight: normal;
+    font-style: italic;
+    font-size: var(--size-600);
+    font-family: var(--font-base);
+    max-width: 30ch;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+  
+  p,
+  li {
+    max-width: 65ch;
+  }
+
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.nav li {
+    float: left;
+  }
+  
+  ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.nav li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #dc6291;
+    font-weight: bold;
+  }
+
+  .hide_this {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .hide_this:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+
 .bacon-photos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
 }
