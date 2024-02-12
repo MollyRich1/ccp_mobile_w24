@@ -69,11 +69,10 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display:flex;
+    justify-content: center;
   }
   
-  ul.nav li {
-    float: left;
-  }
   
   ul.nav li a {
     display: block;
@@ -86,6 +85,9 @@
   
   ul.nav li a:hover {
     background-color: #111;
+    border-width: 2px;
+    border-color: antiquewhite;
+    border-style: dotted;
   }
 
   ul.nav li a.active {
@@ -118,17 +120,29 @@
   }
 
 
-.bacon-photos{
+div.bacon-photos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    margin: 26px;
+    margin: 0px;
+    /* grid-auto-rows: 246px; */
+
+}
+
+.bacon-photos img{
+  justify-content: center;
+  margin: 8px;
+  overflow: hidden;
 }
 
 .zucchini_images{
   display: grid;
-  grid-template-columns: 210px;
+  grid-template-columns: 1fr;
   justify-content: center;
+}
+
+.zucchini_images img{
+  margin: 5px;
 }
 
 .make_small{
@@ -142,13 +156,43 @@
   margin: 0 auto;
 }
 
-.main_pic, div.travel_pic{
-  display:grid;
-  grid-template-columns: 1fr;
-  /* justify-content: center; */
+.make_small3 img{
+  width: 180px;
 }
 
-.travel_pic img{
+.main_pic{
+  display:grid;
+  grid-template-columns: 1fr;
   justify-content: center;
+}
+
+.travel_pic{
+  display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.travel_pic img {
+  max-width: 100%;
+  width: 340px;
+  height: auto;
+  display: block;
+  margin: 5px;
+}
+
+video{
+  border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 3px;
+    width: 180px;
+    margin: 8px;
+    overflow: hidden;
+    
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gif{
+    display: none;
+  }
 }
 
