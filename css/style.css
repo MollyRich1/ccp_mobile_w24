@@ -93,6 +93,7 @@
   ul.nav li a.active {
     background-color: #dc6291;
     font-weight: bold;
+    color: rgb(0, 0, 0);
     /* text-decoration: underline; */
     border-color: antiquewhite;
   }
